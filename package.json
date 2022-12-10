@@ -33,7 +33,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "w3b",
+  "name": "@guchii/w3b",
   "author": "Shivom Srivastava",
   "module": "dist/w3b.esm.js",
   "size-limit": [
