@@ -1,11 +1,10 @@
-import useWeb3Store from './web3store';
+import { useWeb3Store } from './web3store';
 import { useEffect, useCallback } from 'react';
 import { ethers } from 'ethers';
 import shallow from 'zustand/shallow';
 
 export const useW3b = () => {
   const [
-    isInstalledWallet,
     setConnectedAccount,
     setIsInstalledWallet,
     setIsConnected,
@@ -15,7 +14,6 @@ export const useW3b = () => {
     setProvider,
   ] = useWeb3Store(
     (state: Web3State & Web3Actions) => [
-      state.isInstalledWallet,
       state.setConnectedAccount,
       state.setIsInstalledWallet,
       state.setIsConnected,
@@ -40,6 +38,7 @@ export const useW3b = () => {
       } else {
         setConnectedAccount(null);
         setIsConnected(false);
+        setBalance(0);
       }
     });
   };
@@ -68,10 +67,6 @@ export const useW3b = () => {
   useEffect(() => {
     setIsInstalledWallet(!!window.ethereum);
   }, []);
-
-  if (!isInstalledWallet) {
-    throw new Error('No ethereum object');
-  }
 
   useEffect(() => {
     const provider = new ethers.providers.Web3Provider(window.ethereum);

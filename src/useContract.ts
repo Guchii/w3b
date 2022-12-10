@@ -1,6 +1,6 @@
 import { ethers } from 'ethers';
 import { useEffect } from 'react';
-import useWeb3Store from './web3store';
+import { useWeb3Store } from './web3store';
 
 export const useContract = (contractInfo: Contract) => {
   const [

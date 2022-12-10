@@ -1,4 +1,4 @@
-import useWeb3Store from './web3store';
+import {useWeb3Store} from './web3store';
 import shallow from 'zustand/shallow';
 export const useConnectWallet = () => {
 

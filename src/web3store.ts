@@ -1,7 +1,7 @@
 import create from 'zustand';
 import produce from 'immer';
 
-const useWeb3Store = create<Web3State & Web3Actions>()(set => ({
+export const useWeb3Store = create<Web3State & Web3Actions>()(set => ({
   isInstalledWallet: false,
   isConnected: false,
   connectedAccount: null,
@@ -15,5 +15,3 @@ const useWeb3Store = create<Web3State & Web3Actions>()(set => ({
   setBalance: pay => set({ balance: pay }),
   setProvider: pay => set({ provider: pay }),
 }));
-
-export default useWeb3Store;
