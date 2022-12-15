@@ -1,5 +1,5 @@
-import shallow from "zustand/shallow";
-import { useWeb3Store } from "./web3store";
+import shallow from 'zustand/shallow';
+import { useWeb3Store } from './web3store';
 
 export const useW3bValues = () => {
   const [
@@ -8,7 +8,7 @@ export const useW3bValues = () => {
     connectedAccount,
     balance,
     provider,
-    contracts
+    contracts,
   ] = useWeb3Store(
     (state: Web3State & Web3Actions) => [
       state.isInstalledWallet,
@@ -16,7 +16,7 @@ export const useW3bValues = () => {
       state.connectedAccount,
       state.balance,
       state.provider,
-      state.contracts
+      state.contracts,
     ],
     shallow
   );
@@ -27,6 +27,6 @@ export const useW3bValues = () => {
     connectedAccount,
     balance,
     provider,
-    contracts
+    contracts,
   };
 };

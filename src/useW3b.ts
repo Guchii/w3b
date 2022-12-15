@@ -2,8 +2,10 @@ import { useWeb3Store } from './web3store';
 import { useEffect, useCallback } from 'react';
 import { ethers } from 'ethers';
 import shallow from 'zustand/shallow';
+import { enableMapSet } from 'immer';
 
 export const useW3b = () => {
+  enableMapSet();
   const [
     setConnectedAccount,
     setIsInstalledWallet,

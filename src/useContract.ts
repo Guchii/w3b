@@ -32,7 +32,7 @@ export const useContract = (contractInfo: Contract) => {
         console.log(error);
       }
     });
-  }, []);
+  }, [provider]);
 
   return contracts.get(contractInfo.address);
 };
