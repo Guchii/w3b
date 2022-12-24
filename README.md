@@ -16,7 +16,7 @@ pnpm add @guchii/w3b
 
 ## 🧠 Usage
 
-See the usage from the demo app in the apps directory
+See the usage from the demo app in the apps directory. [See here](https://github.com/Guchii/w3b/blob/main/apps/demo/src/App.tsx)
 
 ```js
 const App = () => {
@@ -30,9 +30,10 @@ const App = () => {
     );
 }
 ```
+
 Uses <b>ethers, zustand, and immer.js</b>
 
 ### PS
 This is my first library/package thing.
 
-The hooks are working and usable, but I'd suggest using [useDapp](https://github.com/TrueFiEng/useDApp/), It's feature complete and reliable.
+The hooks are working and usable, but I'd suggest using [useDApp](https://github.com/TrueFiEng/useDApp/), It's feature complete and reliable.
