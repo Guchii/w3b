@@ -15,6 +15,8 @@ jobs:
         with:
           version: 7.18.2
           run_install: true
+      - name: Copy README
+        run: cp ./README.md ./apps/w3b/README.md
       - run: pnpm --filter @guchii/w3b test
       - run: pnpm --filter @guchii/w3b semantic-release
         env:

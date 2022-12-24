@@ -1,8 +1,6 @@
-A set of simple and useful hooks for react facilitating use of the Ethereum Provider API (under development).
+A set of simple and useful hooks for react facilitating use of the <b>Ethereum provider API</b>
 
-uses <b>ethers, zustand, and immer.js</b>
-
-### Installation
+## ⚙ Installation️
 
 ```sh
 npm install @guchii/w3b
@@ -16,8 +14,25 @@ yarn add @guchii/w3b
 pnpm add @guchii/w3b
 ```
 
-### Usage
+## 🧠 Usage
 
+See the usage from the demo app in the apps directory
+
+```js
+const App = () => {
+    // call the useW3b hook on the top of your entry component 
+    useW3b(); 
+    // you may now use the other hooks
+    return (
+        <>
+            ...
+        </>
+    );
+}
 ```
-will write after my end sems
-```
+Uses <b>ethers, zustand, and immer.js</b>
+
+### PS
+This is my first library/package thing.
+
+The hooks are working and usable, but I'd suggest using [useDapp](https://github.com/TrueFiEng/useDApp/), It's feature complete and reliable.
