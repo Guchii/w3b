@@ -37,7 +37,7 @@
   "name": "@guchii/w3b",
   "author": "Shivom Srivastava",
   "module": "dist/w3b.esm.js",
-  "homepage": "https://github.com/guchii/w3b",
+  "homepage": "https://guchii.github.io/w3b",
   "size-limit": [
     {
       "path": "dist/w3b.cjs.production.min.js",
