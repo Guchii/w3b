@@ -1,0 +1,14 @@
+{
+  "name": "w3b",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm --stream -r dev"
+  },
+  "dependencies": {
+  },
+  "keywords": [],
+  "author": "Shivom Srivastava",
+  "license": "ISC"
+}

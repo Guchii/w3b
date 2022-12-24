@@ -1,0 +1,71 @@
+{
+  "version": "0.0.0-development",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "dev": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why",
+    "semantic-release": "semantic-release --branches main"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "@guchii/w3b",
+  "author": "Shivom Srivastava",
+  "module": "dist/w3b.esm.js",
+  "homepage": "https://github.com/guchii/w3b",
+  "size-limit": [
+    {
+      "path": "dist/w3b.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/w3b.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^8.1.0",
+    "@types/react": "^18.0.26",
+    "husky": "^8.0.2",
+    "react": "^18.2.0",
+    "size-limit": "^8.1.0",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.4",
+    "semantic-release": "^19.0.5"
+  },
+  "dependencies": {
+    "ethers": "^5.7.2",
+    "immer": "^9.0.16",
+    "zustand": "^4.1.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Guchii/w3b.git"
+  }
+}
