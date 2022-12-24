@@ -6,9 +6,15 @@
   "scripts": {
     "dev": "pnpm --stream -r dev"
   },
-  "dependencies": {
-  },
   "keywords": [],
   "author": "Shivom Srivastava",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
